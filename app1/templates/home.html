@@ -7,6 +7,24 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    
+    .container{
+      width: 500px;
+      margin-left:10px;
+      padding-top: 0px;
+    }
+    .hdd {
+    padding: 20px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    }
+    .hdd h1 {
+      font-size: 40px;
+    }
+  </style>
 </head>
 <body>
 
@@ -38,10 +56,14 @@
     </ul>
   </div>
 </nav>
+
+<div class='hdd'>
+  <h1>MALWARE DETECTOR</h1>
+</div>
   
-<div class="container">
-  <h3>Right Aligned Navbar HOME </h3>
-  <p>The .navbar-right class is used to right-align navigation bar buttons.</p>
+<div class="container" >
+  {% block title%}
+  {% endblock title %}
 
   {% block content %}
   {% endblock content %}
